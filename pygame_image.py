@@ -31,6 +31,7 @@ def main():
         if key_list[pg.K_RIGHT]:
             kk_rct.move_ip(1,0)
 
+
         x = tmr%3200
         screen.blit(bg_img, [-x, 0]) #1枚目
         screen.blit(bg_img2, [-x+1600, 0]) #２枚目
