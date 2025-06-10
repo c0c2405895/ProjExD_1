@@ -9,7 +9,10 @@ def main():
     pg.display.set_caption("はばたけ！こうかとん")
     screen = pg.display.set_mode((800, 600))
     clock  = pg.time.Clock()
-    bg_img = pg.image.load("fig/pg_bg.jpg")
+    bg_img = pg.image.load("fig/pg_bg.jpg") #背景画像のSurface
+    kk_img = pg.image.load("fig/3.png")
+    kk_img = pg.transform.flip(kk_img, True, False) 
+    kk_img = pg.transform.rotozoom(kk_img, 10, 1.0)
     tmr = 0
     while True:
         for event in pg.event.get():
